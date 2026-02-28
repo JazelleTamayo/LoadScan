@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: add JavaScript file later -->
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+    <!-- SCREEN 1: Scan Study Load - NO NOTIFICATION -->
+    <div class="phone">
+        <div class="dynamic-island">
+            <div class="camera-dot"></div>
+            <div class="speaker"></div>
+        </div>
+        
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>📶 🔋 100%</span>
+        </div>
+        
+        <div class="header">
+            <span class="header-left">←</span>
+            <span class="header-title">LoadScan</span>
+            <span class="header-right">⋯</span>
+        </div>
+        
+        <div class="scan-container">
+            <div class="icon-circle">📄✨</div>
+            <div class="main-label">Scan Study Load</div>
+            <div class="sub-label">Photo or PDF • 10 seconds</div>
+            
+            <div class="button-row">
+                <div class="button">📸 Camera</div>
+                <div class="button-outline">📁 Upload</div>
+            </div>
+            
+            <div class="note-item">
+                <span class="check-circle">✓</span>
+                <span class="note-text">Auto-creates your schedule</span>
+            </div>
+            
+            <div class="note-item">
+                <span class="check-circle">✓</span>
+                <span class="note-text">Get alerts before each class ends</span>
+            </div>
+            
+            <div class="note-item">
+                <span class="check-circle">✓</span>
+                <span class="note-text">Never ask "Saan next?" again</span>
+            </div>
+            
+            <div class="update-note">
+                <span>🔄</span>
+                <span>Rescan anytime your study load changes</span>
+            </div>
+            
+            <div style="margin-top: 16px; text-align: center; font-size: 14px; color: #64748b;">
+                Last scanned: Jan 15, 2025
+            </div>
+            
+            <div class="feature-label">FEATURE 01 — ONE-TIME SCAN</div>
+        </div>
+    </div>
+
+    <!-- SCREEN 2: Today's Schedule with Next Room Alert -->
+    <div class="phone">
+        <div class="dynamic-island">
+            <div class="camera-dot"></div>
+            <div class="speaker"></div>
+        </div>
+        
+        <div class="status-bar">
+            <span>10:05</span>
+            <span>📶 🔋 98%</span>
+        </div>
+        
+        <!-- NEXT ROOM ALERT NOTIFICATION (only one) -->
+        <div class="overlay-notification">
+            <div class="notif-icon">📍</div>
+            <div class="notif-content">
+                <div class="notif-header">
+                    <span class="notif-app-name">LoadScan</span>
+                    <span class="notif-time">now</span>
+                </div>
+                <div class="notif-title">Next room alert</div>
+                <div class="notif-body">CS 201 ends in 10 minutes</div>
+                <div class="notif-body" style="font-weight: 500; color: white; margin-top: 4px;">Next: PE 102 at Gym Court B</div>
+            </div>
+        </div>
+        
+        <!-- Dim overlay behind notification -->
+        <div class="dim-overlay"></div>
+        
+        <div class="header">
+            <span class="header-left">←</span>
+            <span class="header-title">Today's Schedule</span>
+            <span class="header-right">⋯</span>
+        </div>
+        
+        <div style="opacity: 0.9;">
+            <div class="date-badge">
+                <span class="date">Monday, Feb 23</span>
+                <span class="scan-badge">📅 Scanned Jan 15</span>
+            </div>
+            
+            <div class="class-card">
+                <div class="class-time-row">
+                    <span class="class-time">8:00 — 9:30</span>
+                    <span class="class-tag tag-next">Ended</span>
+                </div>
+                <div class="class-name">IT 310</div>
+                <div class="class-location">📍 Room 201 • Engineering</div>
+            </div>
+            
+            <div class="class-card current">
+                <div class="class-time-row">
+                    <span class="class-time">10:00 — 11:30</span>
+                    <span class="class-tag tag-current">Current</span>
+                </div>
+                <div class="class-name">CS 201</div>
+                <div class="class-location">📍 Room 305 • Engineering</div>
+            </div>
+            
+            <!-- Next room highlight -->
+            <div class="class-card" style="border-left: 4px solid #4f46e5; background: #f8fafc;">
+                <div class="class-time-row">
+                    <span class="class-time">1:00 — 2:30</span>
+                    <span class="class-tag tag-next">Next</span>
+                </div>
+                <div class="class-name">PE 102</div>
+                <div class="class-location">📍 Gym Court B</div>
+            </div>
+            
+            <div class="class-card">
+                <div class="class-time-row">
+                    <span class="class-time">3:00 — 4:30</span>
+                </div>
+                <div class="class-name">GEC 105</div>
+                <div class="class-location">📍 Room 12 • Liberal Arts</div>
+            </div>
+        </div>
+        
+        <div class="feature-label" style="opacity: 0.9;">FEATURE 02 — NEXT ROOM ALERTS</div>
+    </div>
+
+    <!-- SCREEN 3: Quick Glance Dashboard - What's Next -->
+    <div class="phone">
+        <div class="dynamic-island">
+            <div class="camera-dot"></div>
+            <div class="speaker"></div>
+        </div>
+        
+        <div class="status-bar">
+            <span>10:07</span>
+            <span>📶 🔋 98%</span>
+        </div>
+        
+        <div class="header">
+            <span class="header-left">←</span>
+            <span class="header-title">Quick Glance</span>
+            <span class="header-right">⋯</span>
+        </div>
+        
+        <div class="glance-container">
+            <div class="current-class">
+                <div class="current-label">CURRENT CLASS</div>
+                <div class="current-name">CS 201</div>
+                <div class="current-time">Ends in 8 min</div>
+            </div>
+            
+            <div class="next-arrow">⬇️</div>
+            
+            <div class="next-class">
+                <div class="next-label">NEXT CLASS</div>
+                <div class="next-name">PE 102</div>
+                <div class="next-location">📍 Gym Court B</div>
+                <div class="next-time">Starts at 1:00 PM</div>
+            </div>
+            
+            <div class="break-timer">
+                <span class="break-label">Break time left</span>
+                <span><span class="break-time">52</span><span class="break-unit">min</span></span>
+            </div>
+            
+            <div class="remaining-list">
+                <div style="font-weight: 600; margin-bottom: 8px; color: #334155;">Later today</div>
+                <div class="remaining-item">
+                    <span class="remaining-class">PE 102</span>
+                    <span class="remaining-time">1:00 - 2:30</span>
+                </div>
+                <div class="remaining-item">
+                    <span class="remaining-class">GEC 105</span>
+                    <span class="remaining-time">3:00 - 4:30</span>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 16px; padding: 12px; background: #f8fafc; border-radius: 16px; text-align: center; color: #4f46e5; font-weight: 500;">
+            ⏰ Rest now. We'll alert you before next class.
+        </div>
+        
+        <div class="feature-label">FEATURE 03 — QUICK GLANCE DASHBOARD</div>
+    </div>
+</body>
+</html>
